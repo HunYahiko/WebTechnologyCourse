@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+@keyframes slidenavAnimation {
+    from {
+        /*-webkit-transform: scale(0.5);*/
+        opacity: 0;
+    }
+    to {
+        /*-webkit-transform: scale(1);*/
+        opacity: 1;
+    }
+}
+@-webkit-keyframes slidenavAnimation {
+    from {
+        /*-webkit-transform: scale(0.5);*/
+        opacity: 0;
+    }
+    to {
+        /*-webkit-transform: scale(1);*/
+        opacity: 1;
+    }
+}
+
+.dropdown-toggle::after {
+    display:none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+
+    animation-name: slidenavAnimation;
+    animation-duration:.9s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: slidenavAnimation;
+    -webkit-animation-duration:.9s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.navbar-item {
+    font-family: Oswald, sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+}
+
+.navbar-nav > li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-nav > li > a {
+    color: black !important;
+}
+
+.navbar-nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dropdown-menu {
+    background-color: #e8e8e8 !important;
+    margin: 0;
+    padding: 0;
+}
+div.--no-left-padding a.dropdown-item {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.dropdown-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+}
+
+.no-padding {
+    padding-left: 0;
+}
+
+.no-left-padding {
+    padding: 0;
+}
+
+.tables-menu, .storage-menu, .learn-menu {
+    min-width: 550px;
+}
+
+.chairs-menu, .decor-menu {
+    min-width: 700px;
+}
+
+.sofas-menu, .sectionals-menu {
+    min-width: 750px;
+}
+
+.bedroom-menu {
+    min-width: 800px;
+}
+
+.sleeper_sofas-menu {
+    min-width: 850px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575px) {
+    .--collapse-none {
+        display: none;
+    }
+
+    .no-padding {
+        padding-left: 20px;
+    }
+
+    .sofas-menu, .sectionals-menu, .sleeper_sofas-menu, .chairs-menu,
+    .tables-menu, .storage-menu, .bedroom-menu, .decor-menu, .learn-menu {
+        min-width: 100%;
+    }
+
+    div.--no-left-padding a.dropdown-item {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+
+

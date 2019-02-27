@@ -25,6 +25,10 @@ Define animation keyframes
     }
 }
 
+.container, .container-fluid {
+    font-family: Oswald , sans-serif;
+}
+
 /**
 Navigation Bar Style + Dropdowns
  */
@@ -125,10 +129,6 @@ Introduction Carousel Styling
     margin-top: 20px;
 }
 
-.container {
-    font-family: Oswald , sans-serif;
-}
-
 .carousel-item-0 {
     background: -webkit-linear-gradient(left, #b5dedc 40%, #b5c9dc 60%);
 }
@@ -176,7 +176,6 @@ Introduction Carousel Styling
     border-radius: 0 !important;
 }
 
-
 /**
 Introduction Entry Styling
  */
@@ -184,9 +183,86 @@ Introduction Entry Styling
     margin-top: 30px;
 }
 
+.entry-text {
+    background: -webkit-linear-gradient(45deg, #e7caca 30%, #e3aec7 70%);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: right;
+    margin-right: -100px;
+    margin-left: 50px;
+    z-index: 2;
+}
 
+.entry--text-container > h1 {
+    font-weight: bolder;
+    color: white;
+}
 
+.entry--text-container > p {
+    font-size: small;
+}
 
+/**
+Customer Reviews Configuration
+ */
+
+.section--customer-reviews {
+    margin-top: 20px;
+}
+
+.costumer-reviews {
+    background: #e7e7e8;
+}
+
+.review {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.review--wrapper > div:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.review--title {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.review--content {
+    font-size: small;
+    line-height: 20px;
+}
+
+.review--name {
+    font-size: 1rem;
+}
+
+/**
+Banner Configuration
+ */
+
+.section--banner {
+    background: -webkit-linear-gradient(left, #b5dedc 30%, #b5c8dc 70%);
+}
+
+.banner-col {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.banner--image {
+    margin-bottom: 15px;
+}
+
+.banner--text {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.banner-wrapper .banner--text {
+}
 /**
 Media Configuration
  */
@@ -230,6 +306,38 @@ Media Configuration
         margin-right: 50px;
         font-size: smaller;
     }
+
+    .entry-text {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        margin-left: 40px;
+        margin-right: 20px;
+        margin-top: -100px;
+        z-index: 2;
+    }
+
+    .review {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .banner-col {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+
+    .entry-text {
+       margin-top: -30px;
+    }
+
+    .entry--text-container > h1 {
+        font-size: 24px;
+    }
+
 }
 
 

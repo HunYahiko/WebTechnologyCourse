@@ -263,6 +263,42 @@ Banner Configuration
 
 .banner-wrapper .banner--text {
 }
+
+/**
+Footer Configuration
+ */
+.joinTheFamily, .whatWeDo, .customerCare, .findUs {
+    text-align: center;
+}
+
+.footer-row {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #838384;
+}
+
+.footer-row > .col-sm-2 p {
+    margin-bottom: 5px;
+    font-family: Oswald sans-serif;
+    font-weight: bold;
+    font-size: small;
+    color: white;
+}
+
+.footer-row > .col-sm-2 h6 {
+    font-family: Oswald sans-serif;
+    font-weight: bold;
+}
+
+.findUs > h5 {
+    color: #b4dcdb;
+}
+
+.findUs--icon-wrapper > a {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
 /**
 Media Configuration
  */
@@ -326,6 +362,10 @@ Media Configuration
         padding-top: 15px;
         padding-bottom: 15px;
     }
+
+    .footer-row > .col-sm-2 {
+        margin-bottom: 10px;
+    }
 }
 
 @media (min-width: 300px) and (max-width: 400px) {
@@ -337,8 +377,4 @@ Media Configuration
     .entry--text-container > h1 {
         font-size: 24px;
     }
-
 }
-
-
-

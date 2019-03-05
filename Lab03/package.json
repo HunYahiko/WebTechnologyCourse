@@ -1,0 +1,17 @@
+{
+  "name": "lab03",
+  "version": "1.0.0",
+  "description": "Task number 3 for Web Technologies Course, which consists of implementing an MVC application using NodeJS, HTML/CSS and PostgreSQL database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MVC",
+    "NodeJS",
+    "HTML/CSS",
+    "PostgreSQL"
+  ],
+  "author": "Stanislav Sanduta",
+  "license": "ISC"
+}

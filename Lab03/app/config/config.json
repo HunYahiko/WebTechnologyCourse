@@ -1,0 +1,25 @@
+{
+  "development": {
+    "config_id": "development",
+    "node_port": 3000,
+    "username": "postgres",
+    "password": "admin",
+    "database": "test_node",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "admin",
+    "database": "test_node",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "admin",
+    "database": "test_node",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

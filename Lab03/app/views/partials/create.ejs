@@ -1,0 +1,32 @@
+<section class="create_review--section">
+    <form id="create--form" action="http://localhost:3000/review" method="POST">
+        <div class="form-row">
+            <div class="col-sm-6">
+                <label for="first_name">First Name:</label>
+                <input type="text" class="form-control" placeholder="First Name" id="first_name" name="first_name" required>
+            </div>
+            <div class="col-sm-6">
+                <label for="last_name">Last Name:</label>
+                <input type="text" class="form-control" placeholder="Last Name" id="last_name" name="last_name" required>
+            </div>
+            <div class="col-sm-6">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+            </div>
+            <div class="col-sm-12">
+                <label for="review">Review:</label>
+                <textarea class="form-control" rows="3" id="review" name="review_text" required></textarea>
+            </div>
+        </div>
+        <div class="submit-button">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </form>
+</section>
+<section class="form-submit--result row justify-content-center">
+    <div class="col-sm-12 result-text--wrapper">
+        <p>Successfully created a new review!</p>
+    </div>
+</section>
+
+<script src="/js/create.js"></script>

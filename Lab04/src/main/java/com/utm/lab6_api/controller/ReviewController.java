@@ -25,11 +25,11 @@ public class ReviewController {
         return ResponseEntity.status(200).body(reviews);
     }
     
-    @GetMapping(value = "/reviews/{email}")
-    public ResponseEntity getReviewsByEmail(@PathVariable(name = "email") String email) throws ReviewNotFoundException {
-        List<Review> reviews = reviewService.findAllReviewsByEmail(email);
-        return ResponseEntity.status(200).body(reviews);
-    }
+//    @GetMapping(value = "/reviews/{email}")
+//    public ResponseEntity getReviewsByEmail(@PathVariable(name = "email") String email) throws ReviewNotFoundException {
+//        List<Review> reviews = reviewService.findAllReviewsByEmail(email);
+//        return ResponseEntity.status(200).body(reviews);
+//    }
     
     @PostMapping(value = "/reviews")
     public ResponseEntity createReview(@RequestBody Review review) {
@@ -46,5 +46,11 @@ public class ReviewController {
     public ResponseEntity deleteReview(@PathVariable(name = "id") Long id) throws ReviewNotFoundException {
         reviewService.deleteReview(id);
         return ResponseEntity.status(204).body("Successfully deleted review.");
+    }
+    
+    @GetMapping(value = "/reviews/{id}")
+    public ResponseEntity getReviewById(@PathVariable(name = "id") Long id) throws ReviewNotFoundException {
+        Review review = reviewService.findReviewById(id);
+        return ResponseEntity.status(200).body(review);
     }
 }
